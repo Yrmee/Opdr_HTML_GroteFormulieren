@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuur jouw recept in!</title>
+</head>
+<body>
+
+<header>
+    <h1>Stuur jouw recept in!</h1>
+    <p>
+        Heb jij ook een lekker recept? <br>
+        Vul dan het onderstaand formulier in en wie weet staat jouw recept dan binnenkort op onze website!
+    </p>
+</header>
+
+<form name="contact" method="POST" data-netlify="true">
+    <p>
+        <label>Naam: <input type="text" name="name" /></label>   
+    </p>
+    <p>
+        <label>Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+        <label>Telefoon: <input type="tel" name="tel" /></label>   
+    </p>
+    <p>
+        <label>Leeftijd: <input type="text" name="age" /></label>   
+    </p>
+    <p>
+        <label>Geboortedatum: <input type="date" name="date" /></label>   
+    </p>
+    <p>
+        <label>Geslacht: <br>
+            <input type="radio" name="gender" value="Man"/> Man <br>
+            <input type="radio" name="gender" value="Vrouw"/> Vrouw <br>
+            <input type="radio" name="gender" value="Zeg ik liever niet"/> Zeg ik liever niet
+        </label>   
+    </p>
+    <p>
+        <label>Favoriete cuisine:<br>
+         <input type="checkbox" name="cuisine" value="Frans"/>Frans<br>
+         <input type="checkbox" name="cuisine" value="Italiaans"/>Italiaans<br>
+         <input type="checkbox" name="cuisine" value="Spaans"/>Spaans<br>
+         <input type="checkbox" name="cuisine" value="Arabisch"/>Arabisch<br>
+        </label>   
+    </p>
+    <p>
+        <label>Favoriete kleur van schort: <input type="colorpicker" name="color" /></label>   
+    </p>
+    <p>
+        <label>Biografie: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+        <label>Upload je recept: <input type="file" name="file" /></label>   
+    </p>
+    <p>
+        <label>URL van je recept: <input type="url" name="url" /></label>   
+    </p>
+    <p>
+        <button type="reset">Reset</button>
+        <button type="submit">Send</button>
+    </p>
+  </form>
+    
+</body>
+</html>
